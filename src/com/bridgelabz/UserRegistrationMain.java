@@ -41,6 +41,14 @@ public class UserRegistrationMain {
 		} else {
 			System.out.println("Mobile Number is Incorrect");
 		}
+		
+		System.out.println("Enter the password:");
+		String password = sc.nextLine();
+		if (regex.isPasswordValid(password) == true) {
+			System.out.println("Password is Valid");
+		} else {
+			System.out.println("Password is Invalid");
+		}
 	}
 
 }
