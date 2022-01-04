@@ -33,6 +33,14 @@ public class UserRegistrationMain {
 		} else {
 			System.out.println("Email id  is Incorrect ");
 		}
+		
+		System.out.println("Enter the mobile number:");
+		String mobileNumber = sc.nextLine();
+		if (regex.isMobileFormatValid(mobileNumber) == true) {
+			System.out.println("Mobile Number is correct");
+		} else {
+			System.out.println("Mobile Number is Incorrect");
+		}
 	}
 
 }
