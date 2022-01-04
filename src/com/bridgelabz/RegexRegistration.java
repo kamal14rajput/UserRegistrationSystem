@@ -38,4 +38,14 @@ public class RegexRegistration {
 		Matcher matcher = pattern.matcher(email);
 		return matcher.matches();
 	}
+
+	public static boolean isMobileFormatValid(String mobileNumber) {
+		String Regex_Number = "^((\\+)?(\\d{2}[\\s]))?(\\d{10}){1}?$";
+		Pattern pattern = Pattern.compile(Regex_Number);
+		if (mobileNumber == null) {
+			return false;
+		}
+		Matcher matcher = pattern.matcher(mobileNumber);
+		return matcher.matches();
+	}
 }
