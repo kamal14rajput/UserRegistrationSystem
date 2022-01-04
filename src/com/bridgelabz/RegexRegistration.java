@@ -50,7 +50,7 @@ public class RegexRegistration {
 	}
 
 	public boolean isPasswordValid(String password) {
-		String Regex_Password = "^[a-zA-Z]{8,}";
+		String Regex_Password = "^(?=.[a-z])(?=.[A-Z]).{8,}$";
 		Pattern pattern = Pattern.compile(Regex_Password);
 		if (password == null) {
 			return false;
