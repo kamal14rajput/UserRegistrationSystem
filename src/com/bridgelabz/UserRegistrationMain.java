@@ -25,6 +25,14 @@ public class UserRegistrationMain {
 			System.out.println("Lastname is Incorrect " + "\n"
 					+ "Enter Last name starts with Capital letter and has minimum 3 characters");
 		}
+		
+		System.out.println("Enter the Email id:");
+		String email = sc.nextLine();
+		if (regex.isValidateEmail(email) == true) {
+			System.out.println("Email id is Correct");
+		} else {
+			System.out.println("Email id  is Incorrect ");
+		}
 	}
 
 }
