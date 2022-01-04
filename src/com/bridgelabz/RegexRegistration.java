@@ -28,4 +28,14 @@ public class RegexRegistration {
 		Matcher matcher = pattern.matcher(lastName);
 		return matcher.matches();
 	}
+	
+	public static boolean isValidateEmail(String email) {
+		String Regex_Email = "^[a-zA-Z0-9]+([+_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?";
+		Pattern pattern = Pattern.compile(Regex_Email);
+		if (email == null) {
+			return false;
+		}
+		Matcher matcher = pattern.matcher(email);
+		return matcher.matches();
+	}
 }
