@@ -49,6 +49,10 @@ public class UserRegistrationMain {
 		} else {
 			System.out.println("Password is Invalid");
 		}
+		
+		
+		System.out.println("Lets validate email addreess");
+		EmailValidate.email();
 	}
 
 }
